@@ -14,9 +14,13 @@ public class OperatorsDemo {
 
         // Operators Precedence
         // BODMAS
-        int a=10, b=25;
-        double c = a*b-10/a;
-        System.out.println(c);
+//        int a=10, b=25;
+//        double c = a*b-10/a;
+//        System.out.println(c);
+
+        int a =15;
+        a = a++ + ++a;
+        System.out.println(a);
 
     }
 
