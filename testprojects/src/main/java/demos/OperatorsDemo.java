@@ -1,3 +1,5 @@
+package demos;
+
 public class OperatorsDemo {
 
     public static void main(String[] args) {
@@ -5,14 +7,14 @@ public class OperatorsDemo {
 //
 //        System.out.println(a&b);
 
-        // Short Circuit Logical Operators
+        // Short Circuit Logical demos.Operators
 //        int a=22;
 //
 //        System.out.println((a>20) && (a<30));
 //
 //        System.out.println((a<20) || (a>30));
 
-        // Operators Precedence
+        // demos.Operators Precedence
         // BODMAS
 //        int a=10, b=25;
 //        double c = a*b-10/a;

@@ -1,3 +1,5 @@
+package demos;
+
 public class RelationalOperators {
 
     public static void main(String[] args) {
@@ -7,7 +9,7 @@ public class RelationalOperators {
 //        System.out.println(a>b);
 //        System.out.println(a<b);
 
-        // Bitwise Operators
+        // Bitwise demos.Operators
 //        int a=9, b=12;
 //
 //        int c = a & b;

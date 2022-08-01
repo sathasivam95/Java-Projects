@@ -1,3 +1,5 @@
+package demos;
+
 import java.util.Scanner;
 /*
     >=90 - A

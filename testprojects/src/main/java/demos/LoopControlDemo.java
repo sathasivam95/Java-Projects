@@ -1,3 +1,5 @@
+package demos;
+
 import java.util.Scanner;
 
 public class LoopControlDemo {
@@ -42,11 +44,6 @@ public class LoopControlDemo {
 //            sum += n;
 //        }
 //        System.out.println("Sum is " +sum);
-
-
-
-
-
 
 
 

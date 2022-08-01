@@ -1,3 +1,5 @@
+package demos;
+
 import java.util.Scanner;
 
 public class SwitchDemo {
@@ -6,7 +8,7 @@ public class SwitchDemo {
 
         int a,b;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter First Number: ");
+        System.out.println("Enter demos.First Number: ");
         a = sc.nextInt();
         System.out.println("Enter Second Number: ");
         b = sc.nextInt();

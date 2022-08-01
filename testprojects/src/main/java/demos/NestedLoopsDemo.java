@@ -1,3 +1,5 @@
+package demos;
+
 public class NestedLoopsDemo {
 /*
     i=1, condition is true on the outer loop, so it continues
@@ -25,10 +27,10 @@ public class NestedLoopsDemo {
             // controls the print of stars
             innerLoop:
             for(int j=1; j<=i; j++){ // prints the stars
-                if(i==3 && j==3)
+                if(i==3)
                     //break outerLoop; // labelled break goto from other languages
                     continue outerLoop;
-                System.out.print(j);
+                System.out.print("*");
             }
             System.out.println(" ");
         }
