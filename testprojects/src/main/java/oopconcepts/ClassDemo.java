@@ -44,8 +44,11 @@ class Box {
     }
 
     boolean isEqual(Box b){
+        b.length++;
         // blackbox invoking = b1 is passing
-        return length == b.length && breadth == b.breadth && height == b.height;
+        if(length == b.length && breadth == b.breadth && height == b.height)
+            return true;
+        return false;
     }
 
 //    void protected finalize(){
@@ -96,6 +99,11 @@ public class ClassDemo {
         System.out.println("b2 height is: " + b2.height);
 
         Box b3 = new Box(b1); // b3 copies b1
+
+        Box b4 = new Box(5,3,4);
+        Box b5 = new Box(5,3,4);
+        System.out.println(b4.isEqual(b5));
+        System.out.println(b4.length);
 
 
     }
