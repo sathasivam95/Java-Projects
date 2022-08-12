@@ -39,6 +39,7 @@ public class ArraysDemo {
         };
         a[0][0] = 85;
         a[2][3] = 78;
+        System.out.println(c);
 
     }
 

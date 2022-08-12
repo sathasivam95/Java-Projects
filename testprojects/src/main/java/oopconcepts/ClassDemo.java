@@ -14,6 +14,24 @@ class Box {
         this.height = height;
     }
 
+    //Constructor Overload
+    Box(){
+        length = -1;
+        breadth = -1;
+        height = -1;
+    }
+
+    // Constructor with an object as a parameter --> Copy constructor
+    Box(Box b){
+        length = b.length;
+        breadth = b.breadth;
+        height = b.height;
+    }
+
+    Box(int l){
+        length = breadth = height = l;
+    }
+
     // Setters used to change the values
     void setDim(int length, int breadth, int height){ // this pointer
         this.length = length;
@@ -23,6 +41,11 @@ class Box {
 
     int volume(){
         return length*breadth*height;
+    }
+
+    boolean isEqual(Box b){
+        // blackbox invoking = b1 is passing
+        return length == b.length && breadth == b.breadth && height == b.height;
     }
 
 //    void protected finalize(){
@@ -40,14 +63,14 @@ public class ClassDemo {
         Box cardBoardBox = new Box(8,9,10);
         Box greenBox = new Box(10,20,30);
 
-        blackBox.setDim(6,2,3);
+//        blackBox.setDim(6,2,3);
 
-        blackBox.setDim(10,29,35);
+        blackBox.setDim(6,5,3);
 
         // Storing data
-        blackBox.length = 10;
-        blackBox.breadth = 8;
-        blackBox.height = 20;
+//        blackBox.length = 10;
+//        blackBox.breadth = 8;
+//        blackBox.height = 20;
 
         System.out.println(blackBox.length);
 
@@ -64,7 +87,15 @@ public class ClassDemo {
         // Invoking a method
         System.out.println("Volume of wood box is " +woodenBox.volume());
 
+        Box b1 = new Box(6,4,3);
 
+        Box b2 = new Box(12);
+
+        System.out.println("black box == b1 " +blackBox.isEqual(b1));
+
+        System.out.println("b2 height is: " + b2.height);
+
+        Box b3 = new Box(b1); // b3 copies b1
 
 
     }
