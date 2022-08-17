@@ -5,12 +5,14 @@ class Box {
     int length; // instance variables
     int breadth;
     int height;
+    static int boxCount;
 
     // Constructor
     Box(int length, int breadth, int height) {
         this.length = length;
         this.breadth = breadth;
         this.height = height;
+        boxCount++;
     }
 
     //Constructor Overload
@@ -18,6 +20,13 @@ class Box {
         length = -1;
         breadth = -1;
         height = -1;
+        boxCount++;
+    }
+
+    static {
+        System.out.println("From the static block");
+        boxCount = 0;
+
     }
 
     // Constructor with an object as a parameter --> Copy constructor
@@ -25,10 +34,12 @@ class Box {
         length = b.length;
         breadth = b.breadth;
         height = b.height;
+        boxCount++;
     }
 
     Box(int l){
         length = breadth = height = l;
+        boxCount++;
     }
 
     // Setters used to change the values
@@ -62,6 +73,9 @@ class Box {
 //    void protected finalize(){
 //
 //    }
+    static void displayBoxCount(){
+        System.out.println("Box count is "+ boxCount);
+    }
 
 }
 
@@ -113,6 +127,7 @@ public class ClassDemo {
         System.out.println(b4.isEqual(b5));
         System.out.println(b4.length);
 
+        Box.displayBoxCount();
 
     }
 
