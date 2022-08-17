@@ -6,7 +6,6 @@ class Box {
     int breadth;
     int height;
 
-
     // Constructor
     Box(int length, int breadth, int height) {
         this.length = length;
@@ -49,6 +48,15 @@ class Box {
         if(length == b.length && breadth == b.breadth && height == b.height)
             return true;
         return false;
+    }
+
+    Box doubleBox(){
+        Box temp = new Box(2 * this.length, 2 * this.breadth, 2 * this.height);
+        return temp;
+
+//        temp.length = 2 * this.length;
+//        temp.breadth = 2 * this.breadth;
+//        temp.height = 2 * this.height;
     }
 
 //    void protected finalize(){
