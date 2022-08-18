@@ -1,4 +1,4 @@
-package operatorsexercise;
+package methodsexercise.operatorsexercise;
 
 public class CompoundAssignment {
 
